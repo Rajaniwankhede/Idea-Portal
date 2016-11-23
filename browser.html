@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Idea Portal</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .menu {
+            height: 150px;
+            width: 250px;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+    </style>
+
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><b>I</b>P</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Idea</b>Portal</span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 4 notifications</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-aqua"></i> 5 new clients today
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-warning text-yellow"></i>add new user as technician
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-red"></i> 5 new members joined
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-shopping-cart text-green"></i>make payment
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="hidden-xs"><small>online</small> Rajani </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" title="Logout">
+                                <span="hidden-xs"><i class="fa fa-sign-out"></i></span>
+                            </a>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <li>
+                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar ">
+            <section class="sidebar">
+                <ul class="sidebar-menu">
+                    <h1></h1>
+                    <li><a href="home.html"><i class="fa fa-home text-red"></i> <span>Home</span></a></li>
+                    <li><a href="profile.html"><i class="fa fa-user text-yellow"></i> <span> Profile</span></a></li>
+                    <li><a href="data.html"><i class="fa fa-shopping-cart text-red"></i> <span>My Idea</span></a></li>
+                    <li><a href="addidea.html"><i class="fa fa-thumbs-o-up text-yellow"></i> <span>Addidea</span></a></li>
+                    <li><a href="browser.html"><i class="fa fa-share text-muted"></i> <span>Browser</span></a></li>
+                </ul>
+            </section>
+        </aside>
+        <!-- Main content -->
+        <div class="content-wrapper"  style="height:800px">
+            <div class="content-header">
+                <div class="col-md-3">
+                    <h1>search idea</h1>
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                                  </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <section class="content">
+                <div class="col-md-12">
+                    <div class="menu" style="background-color: pink;">
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: gray;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: Teal;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: Aqua;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: white;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: pink;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: Brown;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: Yellow;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: oat;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: sand;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: pink;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="menu" style="background-color: purple;">
+
+                        <table>
+                            <tr>
+                                <td>name:</td>
+                                <td>rajni</td>
+                            </tr>
+                            <tr>
+                                <td>idea:</td>
+                                <td>image buiding concept</td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>devlopement</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- /.content-footer -->
+        <footer class="main-footer">
+            <div class="pull-right  hidden-xs">
+                <b>Version</b> 1.1.1
+            </div>
+            <strong>Idea  @ Portal; 2016-2017 <a href="http://almsaeedstudio.com">Infoxtech</a>.</strong> All rights reserved.
+        </footer>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../plugins/jQuery/jquery-2.2.3.min.js "></script>
+        <!-- Bootstrap 3.3.6 -->
+        <script src="../bootstrap/js/bootstrap.min.js "></script>
+        <!-- Slimscroll -->
+        <script src="../plugins/slimScroll/jquery.slimscroll.min.js "></script>
+        <!-- FastClick -->
+        <script src="../plugins/fastclick/fastclick.js "></script>
+        <!-- AdminLTE App -->
+        <script src="../dist/js/app.min.js "></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../dist/js/demo.js "></script>
+
+</body>
+
+</html>
